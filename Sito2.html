@@ -1,0 +1,299 @@
+<! doctype HTML>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<title> Serie TV Anni 2000 </title>
+<style>
+body {
+
+  background-color: #007fff;
+} 
+
+.header {
+  background-color: #007fff;
+  color: red;
+  text-align: center;
+  padding: 15px;
+  animation-name: titolo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes titolo {
+  0%   {background-color: #007fff; color: red;}
+  25%  {background-color: yellow; color: blue;}
+  50%  {background-color: blue; color: yellow;}
+  100% {background-color: #007fff; color: red;}
+}
+
+.header h1  {
+  font-size: 50px;
+}
+
+.colonna{
+  float: left;
+  padding: 15px;
+}
+
+.cont::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 25%;
+}
+
+.contenuto {
+  width: 70%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+
+.buffy{
+  background-color: #007fff;
+  padding: 15px;
+  
+}
+
+#tit1 {
+	color:red;
+	font-size: 50px;
+	text-align: center;
+	animation-name: titolo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 50%;
+  max-width: 45%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.sm1 {
+	padding: 15px;
+}
+
+.sp {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: sp 8s linear 2s infinite reverse;
+}
+
+@keyframes sp {
+  0%   {left:0px; top:0px;}
+  25%  { left:1000px; top:0px;}
+  50%  {left:100px; top:100px;}
+  75%  { left:0px; top:100px;}
+  100% { left:0px; top:0px;}
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="header">
+ <h1> Le Serie TV anni 2000 </h1>
+</div>
+
+<div class="cont">
+  <div class="colonna menu">
+  Alcuni esempi di serie tv:
+    <ul>
+      <li button onclick="document.location='#bu1'">Buffy L'ammazzavampiri</button></li>
+      <li button onclick="document.location='#sm1'">Smallville</button></li>
+      <li button onclick="document.location='#st1'">Streghe</button></li>
+      <li button onclick="document.location='#he1'">Heroes</button></li>
+    </ul>
+  </div>
+
+  <div class="colonna contenuto">
+    <h1>Perchè le serie fine anni 90/inizio 2000, sono le migliori?</h1>
+	<ul>
+    <li><p>Prima di tutto per le SIGLE: canzoni, di artisti più o meno sconosciuti, che, se chiudi gli occhi, senti ancora riecheggiare nell'aria (dal sombody saaaaaaveee meeee di Smallville, al anouannawei di Dawson's Creek). </p></li>
+    <li><p>Le TRAME: la lotta per il potere, le sfrenate passioni, gli intrighi, i tradimenti affrontati con indomito coraggio (Cit: 10 punti a chi la indovina).</p></li>
+	<li><p>I PERSONAGGI: quasi tutti molti naturali (ad eccezione dei trentenni in ruoli di quindicenni) e non creati per far parlare i social</p> </li>
+	</ul>
+   </div>
+</div>
+
+<div class="buffy" id="bu1">
+	<h1 id="tit1">Buffy l'ammazzavampiri </h1>
+	<div class="cont">
+	<div class="colonna">
+	<img src="buffy1.jpg" alt"buffy" >
+	<div class="colonna">
+	<iframe width="700" height="400" src="https://www.youtube.com/embed/TLFpBQ12xM8" > </iframe>
+	<br>
+	<form>
+	<fieldset>
+	Voto Sigla :
+        <input type="range" min="0" max="10" value="5" step="1"  id="voto1" name="voto1">
+        <output class="voto1" for="voto1" name="voto1">0 </output>/10
+		<input type="submit" value="submit">
+		
+		
+	</fieldset>
+	</form>
+   </div>
+   </div>
+	</div>
+	
+	
+</div>
+<div >
+	<h2 style="color: red; text-align: center;" class="animated infinite bounce">Alcuni Villains Di Buffy: </h2>
+	<div class="row"> 
+  <div class="column">
+    <img src="https://www.lascimmiapensa.com/wp-content/uploads/2020/09/maxresdefault-300x169.jpg" style="width:100%; " >
+    <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/06/The-Master-in-his-layer-in-Buffy.jpg" style="width:100%" height="48.5%">
+	</div>
+  <div class="column">
+    <img src="data:image/jpeg;base64,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" style="width:100%">
+    <img src="https://www.looper.com/img/gallery/the-buffy-the-vampire-slayer-villain-you-are-based-on-your-zodiac-sign/glory-is-an-aries-1645820643.jpg" style="width:100%" >
+  </div>
+</div>
+</div>
+
+<div class="sm1" id="sm1">
+	<h1 id="tit1">Smallville </h1>
+	<div class="cont">
+	<div class="colonna">
+	<img src="https://www.tvserial.it/wp-content/uploads/2021/06/smallville-cast-courtesy-of-everett-collection.jpeg" alt="smallville" width="500" height="400">
+	<div class="colonna">
+	<iframe width="700" height="400" src="https://www.youtube.com/embed/dq06dfADODg" > </iframe>
+	<br>
+	<form>
+	<fieldset>
+	Voto Sigla :
+        <input type="range" min="0" max="10" value="5" step="1"  id="voto1" name="voto1">
+        <output class="voto1" for="voto1" name="voto1">0 </output>/10
+		<input type="submit" value="submit">
+		
+		
+	</fieldset>
+	</form>
+   </div>
+   </div>
+  </div>
+  <h3 style="text-align:center; color:red; animation-duration: 4s;" class="animated infinite shake"> SUPERMAN AIUTOOOOO!!!!</h3>
+  <div class="sp">
+    
+  <img  src="https://w7.pngwing.com/pngs/456/752/png-transparent-superman-illustration-superman-batman-lex-luthor-flight-superman-comics-heroes-superhero.png" alt="sp" height="100px" width="100px">
+  
+  </div>
+<br><br><br><br>
+
+<div class="st1" id="st1">
+	<h1 id="tit1">Streghe </h1>
+	<div class="cont">
+	<div class="colonna">
+	<img src="https://www.lascimmiapensa.com/wp-content/uploads/2017/01/3c97bd17cbdcfc4dfe5dc6657ebf16c7-1.jpg" alt="streghe" width="500" height="400">
+	<div class="colonna">
+	<iframe width="700" height="400" src="https://www.youtube.com/embed/P-7MGyCZc7A" > </iframe>
+	<br>
+	<form>
+	<fieldset>
+	Voto Sigla :
+        <input type="range" min="0" max="10" value="5" step="1"  id="voto1" name="voto1">
+        <output class="voto1" for="voto1" name="voto1">0 </output>/10
+		<input type="submit" value="submit">
+		
+		
+	</fieldset>
+	</form>
+   </div>
+   </div>
+  </div>
+  </div>
+  
+  <div class="he1" id="he1">
+	<h1 id="tit1">Heroes </h1>
+	<div class="cont">
+	<div class="colonna">
+	<img src="https://www.nerdface.it/wp-content/uploads/2021/07/heroes-la-serie-tv-che-seppe-anticipare-i-cinecomic-e-netflix.jpg" alt="heroes" width="500" height="400">
+	<div class="colonna">
+	<iframe width="700" height="400" src="https://www.youtube.com/embed/YYI9tK3o2YY" > </iframe>
+	<br>
+	<form>
+	<fieldset>
+	Voto Sigla :
+        <input type="range" min="0" max="10" value="5" step="1"  id="voto1" name="voto1">
+        <output class="voto1" for="voto1" name="voto1">0 </output>/10
+		<input type="submit" value="submit">
+		
+		
+	</fieldset>
+	</form>
+   </div>
+   </div>
+  </div>
+  </div>
+  <div style="text-align: center">
+  
+  <h1 style="text-align:center; color:red; animation-duration: 7s;" class="animated infinite flipInX"> Frase Iconica Di Heroes:</h1>
+  <img src="https://media2.giphy.com/media/ZElGWnaaxwgA2oRnPZ/giphy.gif"  align="center" alt="heroes" width="500" height="400" >
+  <br><br>
+  <h1 style="text-align:center; color:red; animation-duration: 6s;" class="animated infinite tada"> Un Compito Apparentemente Semplice...</h1>
+  <img src="https://c.tenor.com/SsY_KG0xCDoAAAAC/heroes-nbc-niki-sanders.gif" alt="heroes" width="300" height="200"><br><br>
+  <h1 style="text-align:center; color:red; animation-duration: 6s;" class="animated infinite flash"> Invece:</h1><br><br>
+  <img src="http://religioninheroes.weebly.com/uploads/1/0/8/4/10844237/3707907_orig.gif" alt="heroes" width="300" height="200">
+  <img src="http://25.media.tumblr.com/b3172a62bff7c5f7ed295af96aedf188/tumblr_mtykegXcUW1sp3jz6o1_500.gif" alt="heroes" width="300" height="200">
+  <img src="https://64.media.tumblr.com/5962d5435f94b7786e57205b21c69d7b/8ee2d43e307bb666-7f/s540x810/412fbf6c1f8b2608b014f51ba4c721d14fad40e1.gifv" alt="heroes" width="300" height="200">
+  <img src="https://images6.fanpop.com/image/photos/35900000/Claire-Bennet-claire-bennet-35950828-300-240.gif" alt="heroes" width="300" height="200">
+  <h1 style="text-align:center; color:red; animation-duration: 6s;" class="animated infinite "> E Il World:</h1><br><br>
+  <img src="https://acegif.com/wp-content/uploads/gif-explosion-49.gif"  align="center" alt="heroes" width="360" height="360" >
+  
+	</div>
+	
+</body>
+</html>
